@@ -1,0 +1,47 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 2.5rem 5rem;
+  width: 100%;
+}
+
+.divider {
+  height: 0.5px;
+  background: var(--border);
+  margin: 4rem 0;
+}
+
+.footer {
+  border-top: 0.5px solid var(--border);
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+@media (max-width: 560px) {
+  .container {
+    padding: 3rem 1.25rem 3rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    padding: 1.25rem;
+  }
+}

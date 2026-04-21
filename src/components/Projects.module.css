@@ -1,0 +1,132 @@
+.section {
+  margin-bottom: 5rem;
+  animation: fadeUp 0.8s ease 0.1s both;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 2.5rem;
+  padding: 2.25rem;
+  border-bottom: 0.5px solid var(--border);
+  transition: background 0.2s;
+  border-radius: 4px;
+  margin: 0 -2.25rem;
+}
+
+.project:first-of-type {
+  border-top: 0.5px solid var(--border);
+  margin-top: 2rem;
+}
+
+.project:hover {
+  background: rgba(26, 26, 24, 0.06);
+}
+
+.meta {
+}
+
+.num {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  border: 0.5px solid var(--border);
+  border-radius: 2px;
+  padding: 3px 7px;
+}
+
+.content {
+}
+
+.title {
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.subtitle {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+}
+
+.desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.ghLink {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  border-bottom: 0.5px solid var(--border);
+  padding-bottom: 1px;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.ghLink:hover {
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 560px) {
+  .project {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
