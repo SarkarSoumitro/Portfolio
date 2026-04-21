@@ -1,1 +1,1 @@
-# Soumitro Sarkar — Portfolio (https://soumitrosarkar.vercel.app/)
+# Soumitro Sarkar — Portfolio 
